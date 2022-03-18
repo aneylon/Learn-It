@@ -1,0 +1,8 @@
+<div *ngIf="!subjects">Loading ...</div>
+
+<div *ngFor="let subject of subjects" >
+  <app-subject-list-item
+    [subject]="subject"
+    >
+  </app-subject-list-item>
+</div>
